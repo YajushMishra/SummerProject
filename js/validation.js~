@@ -1,0 +1,31 @@
+//validation.js
+
+function valid(){
+	alert('ok');
+	
+	var n=document.query.fullname.value;
+	var e=document.query.emailid.value;
+	//alert('ok')
+	
+	if(n==""){
+		
+			//alert('enter name!');
+			document.getElementById("errorname").innerHTML='Enter name!';// this displays the red color error alongside input
+			document.query.fullname.focus();//takes the cursor there to the input area
+			return false;
+		
+	}
+	if(e==""){
+		
+		//alert('enter email!');
+		document.getElementById("erroremail").innerHTML='Enter email!';
+		document.query.emailid.focus();
+		return false;
+		
+		
+	}
+	
+	
+
+
+}
